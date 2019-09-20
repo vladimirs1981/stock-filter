@@ -4,6 +4,11 @@ import java.util.Map;
 import java.util.function.Predicate;
 
 public class StockUtil {
+	@Override
+	public String toString() {
+		return "StockUtil []";
+	}
+
 	public static StockInfo getPrice(final String ticker) {
 		return new StockInfo(ticker, prices.get(ticker));
 	}
